@@ -4,6 +4,8 @@
 # @Author: vmture
 # @Date  : 2020/8/31
 # @Desc  : 好数对的数目
+# https://leetcode-cn.com/problems/number-of-good-pairs/
+# 阶加 https://baike.baidu.com/item/%E9%98%B6%E5%8A%A0/3160625?fr=aladdin
 
 
 # 给你一个整数数组 nums 。
