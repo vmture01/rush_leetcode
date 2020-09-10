@@ -52,6 +52,9 @@ class Solution1:
 
 class Solution2:
     # 回溯
+    # 其实回溯算法关键在于:不合适就退回上一步
+    #
+    # 然后通过约束条件, 减少时间复杂度.
     def subsets(self, nums: list) -> list:
         res = []
         l = len(nums)
