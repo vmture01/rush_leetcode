@@ -42,7 +42,28 @@ class Solution:
         return res
 
 
-print(Solution().generateParenthesis(4))
+class Solution1:
+    # 超时
+    def generateParenthesis(self, n: int) -> list:
+        res = []
+        chart = ""
+
+        def h(charts, left, right):
+            if left == 0 and right == 0:
+                res.append(charts)
+                return
+            if left > right:
+                return
+            if left > 0:
+                h(charts + "(", left - 1, right)
+            if right > 0:
+                h(charts + ")", left, right-1)
+
+        h("", n, n)
+        return res
+
+
+print(Solution1().generateParenthesis(2))
 
 # c = ''.join(i for i in ['(', ')', '(', ')'])
 # m = 0
