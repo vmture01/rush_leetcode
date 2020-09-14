@@ -77,3 +77,13 @@ class Solution2:
 
         h1(head, 0)
         return head
+
+
+class solution3:
+    def reverseList(self, head: ListNode) -> ListNode:
+        tmp = None
+        while head:
+            next = head.next
+            head.next = tmp
+            tmp, head = head, next
+        return tmp
